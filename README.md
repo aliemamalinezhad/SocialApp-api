@@ -10,6 +10,7 @@ Tech stacks of this project:
 * Celery
 * Swagger Api Documentation
 * Pytest as a test tool
+* GraphQL
 
 1. ### Download the project:
 

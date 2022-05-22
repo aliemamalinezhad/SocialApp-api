@@ -39,4 +39,4 @@ Tech stacks of this project:
 * Redoc Documentation -> `127.0.0.1:8000/redoc/`
 
 
-## LICENSE-MIT
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)

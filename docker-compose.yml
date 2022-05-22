@@ -9,12 +9,14 @@ services:
   db: 
     image:  postgres
     volumes:
-      -  ./data/db:/var/lib/postgresql/data
+      -  postgres_data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     container_name: postgres_db
+    networks:
+      - djangonetwork
 
   app:
     build: .
@@ -27,6 +29,16 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     depends_on:
       - db
+    networks:
+      - djangonetwork
+
+
+networks:
+    djangonetwork:
+          
+volumes:
+  postgres_data:
+
 
   # celery:
   #   restart: always

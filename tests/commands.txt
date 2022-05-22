@@ -1,0 +1,15 @@
+# ordinary test
+pytest
+
+#stop after failures
+pytest -x
+
+#if you wanna print something in test
+pytest -rP
+
+# if we wanna test an specific function in specific path
+pytest tests/test_ex1.py::test_example1
+
+
+#we can create tags as marks in ini file and call the tests that have that marks
+pytest -m "slow"

@@ -39,4 +39,4 @@ Tech stacks of this project:
 * Redoc Documentation -> `127.0.0.1:8000/redoc/`
 
 
-## Feel Free to use this project.
+## LICENSE-MIT

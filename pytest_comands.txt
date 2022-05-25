@@ -1,0 +1,16 @@
+// to use print statement in test:
+pytest -rP
+
+// Specify which folder we want to test:
+pytest tests
+
+// Specify which file/test function we want to test:
+pytest tests/test_ex1.py::test_example_1
+
+
+// If we want to skip a function for test we can use mark:
+@pytest.mark.skip           # at the top of function
+
+// If we want to only test fuctions with sepcific marks we can :
+@pytest.mark.slow           # at the top of function       
+pytest -m "slow"            # i defined slow in pytest.ini 
